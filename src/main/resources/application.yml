@@ -1,0 +1,10 @@
+
+app:
+  google:
+    config:
+      keyfile: classpath:/googlePlayKey/public_key
+      pkcs: classpath:/googlePlayKey/rizin_p12.p12
+      client_secret: 6OZjgg_Hs6Z1jSguQ5bIo5Zb
+      client_id: 495796012834-3htdgop4pdmplmqrs6l1f6fuqmkst3qg.apps.googleusercontent.com
+      refresh_token: 1//06k5hPznZmEfkCgYIARAAGAYSNwF-L9IrNgn0E0YFFxiTdpuY-W-Z9LXE9MnP1TA80LO2oAkqAmnHls67Fzdf0fYDzttRcRYYpwU
+      service-account-email: rizin-310@api-7344212024493937034-374861.iam.gserviceaccount.com
