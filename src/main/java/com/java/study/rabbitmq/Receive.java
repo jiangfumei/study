@@ -8,6 +8,9 @@ import com.rabbitmq.client.DeliverCallback;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * 消息接收类
+ */
 public class Receive {
 
     private final static String QUEUE_NAME = "hello";
