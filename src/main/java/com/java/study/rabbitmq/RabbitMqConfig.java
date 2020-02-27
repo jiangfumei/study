@@ -17,5 +17,10 @@ public class RabbitMqConfig {
         return new Queue("hello2");
     }
 
+    @Bean
+    public Queue queue3(){
+        return new Queue("object_queue");
+    }
+
 
 }
