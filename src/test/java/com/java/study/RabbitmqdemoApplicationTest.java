@@ -4,6 +4,7 @@ import com.java.study.modules.domain.User;
 import com.java.study.rabbitmq.HelloSender;
 import com.java.study.rabbitmq.HelloSender2;
 import com.java.study.rabbitmq.ObjectSender;
+import com.java.study.rabbitmq.topic.TopicSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,9 @@ public class RabbitmqdemoApplicationTest {
 
     @Autowired
     ObjectSender objectSender;
+
+    @Autowired
+    TopicSender topicSender;
 
     @Test
     public void contextLoads() {
@@ -52,6 +56,12 @@ public class RabbitmqdemoApplicationTest {
         user.setUsername("jiangfumei");
         user.setPassword("dahaoren");
         objectSender.sendUser(user);
+    }
+
+    @Test
+    public void topic1(){
+        topicSender.send1();
+        topicSender.send2();
     }
 
 
