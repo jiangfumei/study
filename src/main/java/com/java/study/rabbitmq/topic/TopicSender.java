@@ -22,4 +22,15 @@ public class TopicSender {
         amqpTemplate.convertAndSend("topicExchange", "topic.messages", context);
     }
 
+    public void send_one(){
+        String context = "Hi,I am message one";
+        System.out.println("Sender:"+context);
+        this.amqpTemplate.convertAndSend(TopicRabbitMqConfig.TOPIC_EXCHANGE,"topic.one",context);
+    }
+    public void send_two(){
+        String context = "Hi,I am message two";
+        System.out.println("Sender:"+context);
+        this.amqpTemplate.convertAndSend(TopicRabbitMqConfig.TOPIC_EXCHANGE,"topic.two",context);
+    }
+
 }

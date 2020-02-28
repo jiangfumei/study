@@ -74,6 +74,12 @@ public class RabbitmqdemoApplicationTest {
     }
 
     @Test
+    public void topic(){
+        topicSender.send_one();
+        topicSender.send_two();
+    }
+
+    @Test
     public void fanout(){
         fanoutSender.send();
     }
