@@ -63,17 +63,6 @@ public class RabbitmqdemoApplicationTest {
     }
 
     @Test
-    public void topic1(){
-        topicSender.send1();
-        topicSender.send2();
-    }
-    @Test
-    public void topic2(){
-        topicSender.send1();
-        topicSender.send2();
-    }
-
-    @Test
     public void topic(){
         topicSender.send_one();
         topicSender.send_two();

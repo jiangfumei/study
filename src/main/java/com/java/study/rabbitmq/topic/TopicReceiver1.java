@@ -10,8 +10,6 @@ public class TopicReceiver1 {
 
     @RabbitHandler
     public void process(String message){
-
         System.out.println("Receiver1 topic.one :"+ message);
-
     }
 }
