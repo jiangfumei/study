@@ -4,6 +4,7 @@ import com.java.study.modules.domain.User;
 import com.java.study.rabbitmq.HelloSender;
 import com.java.study.rabbitmq.HelloSender2;
 import com.java.study.rabbitmq.ObjectSender;
+import com.java.study.rabbitmq.topic.FanoutSender;
 import com.java.study.rabbitmq.topic.TopicSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,6 +27,9 @@ public class RabbitmqdemoApplicationTest {
 
     @Autowired
     TopicSender topicSender;
+
+    @Autowired
+    FanoutSender fanoutSender;
 
     @Test
     public void contextLoads() {
@@ -62,6 +66,16 @@ public class RabbitmqdemoApplicationTest {
     public void topic1(){
         topicSender.send1();
         topicSender.send2();
+    }
+    @Test
+    public void topic2(){
+        topicSender.send1();
+        topicSender.send2();
+    }
+
+    @Test
+    public void fanout(){
+        fanoutSender.send();
     }
 
 
