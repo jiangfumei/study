@@ -1,4 +1,4 @@
-package com.java.study.designPattern;
+package com.java.study.designPattern.singleton;
 /**
  * 8. 枚举[极推荐使用]
  *

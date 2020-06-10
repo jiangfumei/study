@@ -1,4 +1,4 @@
-package com.java.study.designPattern;
+package com.java.study.designPattern.singleton;
 
 /**
  * 单例模式的懒汉式【线程不安全，不可用】

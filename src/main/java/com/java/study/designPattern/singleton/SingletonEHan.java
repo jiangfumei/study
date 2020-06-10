@@ -1,4 +1,4 @@
-package com.java.study.designPattern;
+package com.java.study.designPattern.singleton;
 
 /**
  * 1.单例模式的饿汉式
