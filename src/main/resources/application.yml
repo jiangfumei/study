@@ -11,11 +11,11 @@ app:
 spring:
   rabbitmq:
     host: localhost
-    port: 5672
+    port: 15672
     username: guest
     password: guest
   datasource:
-    url: jdbc:mysql://localhost:3306/mydb?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/microservice?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
-    password: root
-    driverClassName: com.mysql.jdbc.Driver
+    password: jfm
+    driverClassName: com.mysql.cj.jdbc.Driver
