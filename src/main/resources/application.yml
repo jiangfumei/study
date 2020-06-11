@@ -9,11 +9,11 @@ app:
       refresh_token: 1//06k5hPznZmEfkCgYIARAAGAYSNwF-L9IrNgn0E0YFFxiTdpuY-W-Z9LXE9MnP1TA80LO2oAkqAmnHls67Fzdf0fYDzttRcRYYpwU
       service-account-email: rizin-310@api-7344212024493937034-374861.iam.gserviceaccount.com
 spring:
-  rabbitmq:
-    host: localhost
-    port: 15672
-    username: guest
-    password: guest
+  #rabbitmq:
+    #host: localhost
+    #port: 15672
+    #username: guest
+    #password: guest
   datasource:
     url: jdbc:mysql://localhost:3306/microservice?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
