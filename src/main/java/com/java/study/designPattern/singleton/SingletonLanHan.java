@@ -30,7 +30,7 @@ public class SingletonLanHan {
      */
     private static SingletonLanHan singletonLanHanTwo;
 
-    public static synchronized SingletonLanHan getSingletonLanHanTwo() {
+    public static synchronized SingletonLanHan getSingletonLanHanTwo() {//synchronized关键字锁住的是这个对象,这样的用法,在性能上会有所下降,因为每次调用getInstance(),都要对对象上锁,事实上,只有在第一次创建对象的时候需要加锁,之后就不需要了,所以,这个地方需要改进。
         if (singletonLanHanTwo == null) { // 这里线程是不安全的,可能得到两个不同的实例
             singletonLanHanTwo = new SingletonLanHan();
         }
@@ -60,7 +60,7 @@ public class SingletonLanHan {
      */
     private static SingletonLanHan singletonLanHanFour;
 
-    public static SingletonLanHan getSingletonLanHanFour() {
+    public static SingletonLanHan getSingletonLanHanFour() {//将 synchronized 关键字加在了内部，也就是说当调用的时候是不需要加锁的，只有在 instance 为 null, 并创建对象的时候才需要加锁，性能有一定的提升。
         if (singletonLanHanFour == null) {
             synchronized (SingletonLanHan.class) {
                 if (singletonLanHanFour == null) {
