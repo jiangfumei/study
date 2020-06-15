@@ -1,10 +1,8 @@
 package com.java.study.designPattern.diedaiqi;
 
-import java.util.Iterator;
-
 public interface Collection {
 
-    public Iterator iterator();
+    public MyIterator iterator();
 
     public Object get(int i);
 

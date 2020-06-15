@@ -13,7 +13,7 @@ public class MyCollectionTest extends BasicTestMvc {
     @Test
     public void collect(){
         Collection collection = new MyCollection();
-        Iterator it = (Iterator) collection.iterator();
+        Iterator it =  collection.iterator();
         while(it.hasNext()){
             System.out.println(it.hasNext());
         }
