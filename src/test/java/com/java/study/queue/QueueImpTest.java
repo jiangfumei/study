@@ -32,4 +32,22 @@ public class QueueImpTest extends BasicTestMvc {
         System.out.println(queue);
     }
 
+    @Test
+    public void element(){
+        String element = queue.element();
+        System.out.println(element);
+    }
+
+    @Test
+    public void peek(){
+        String peek = queue.peek();
+        System.out.println(peek);
+    }
+
+    @Test
+    public void remove(){
+        String remove = queue.remove();
+        System.out.println(remove);
+    }
+
 }
