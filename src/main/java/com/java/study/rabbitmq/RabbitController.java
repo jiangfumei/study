@@ -20,5 +20,4 @@ public class RabbitController {
         }
         return com.java.study.util.ResultUtil.success(null);
     }
-
 }
